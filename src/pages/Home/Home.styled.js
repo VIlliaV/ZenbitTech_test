@@ -18,6 +18,19 @@ export const HeroSectionStyled = styled.section`
     letter-spacing: -0.02em;
     text-align: center;
   }
+  & .hero_button {
+    padding: 10px 24px;
+    font-size: 20px;
+    line-height: 1.7;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: var(--button);
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      box-shadow: 0px 4px 8px var(--secondary);
+    }
+  }
 `;
 
 export const HeroBackgroundColor = styled.div`
