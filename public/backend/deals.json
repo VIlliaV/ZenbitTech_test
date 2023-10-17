@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "The Marina Torch",
+    "img": "/images/home_backgr@2x.webp",
+    "dhs": 6500000,
+    "ticket": 60000,
+    "yield": 9.25,
+    "days": 150,
+    "sold": 75
+  },
+  {
+    "id": 2,
+    "name": "The Marina Torch",
+    "img": "/images/home_backgr@2x.webp",
+    "dhs": 6500000,
+    "ticket": 60000,
+    "yield": 9.25,
+    "days": 150,
+    "sold": 75
+  },
+  {
+    "id": 3,
+    "name": "The Marina Torch",
+    "img": "/images/home_backgr@2x.webp",
+    "dhs": 6500000,
+    "ticket": 60000,
+    "yield": 9.25,
+    "days": 150,
+    "sold": 75
+  },
+  {
+    "id": 4,
+    "name": "The Marina Torch",
+    "img": "/images/home_backgr@2x.webp",
+    "dhs": 6500000,
+    "ticket": 60000,
+    "yield": 9.25,
+    "days": 150,
+    "sold": 75
+  }
+]

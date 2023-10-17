@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   h2 {
     font-size: var(--font-size_title);
     line-height: 1.21429;
+    color: var(--accent);
    
   }
   h3 {
