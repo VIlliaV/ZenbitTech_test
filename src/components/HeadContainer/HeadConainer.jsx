@@ -1,5 +1,7 @@
-const HeadConainer = () => {
-  return <div></div>;
+import { Container } from './HeadContainer.styled';
+
+const HeadContainer = ({ children }) => {
+  return <Container className="container">{children}</Container>;
 };
 
-export default HeadConainer;
+export default HeadContainer;
