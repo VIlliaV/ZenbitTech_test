@@ -4,10 +4,10 @@ const AuthNav = () => {
   return (
     <Container>
       <li>
-        <StyledNavLink to="/">Log In</StyledNavLink>
+        <StyledNavLink to="/login">Log In</StyledNavLink>
       </li>
       <li>
-        <StyledNavLink to="/login">Sign Up</StyledNavLink>
+        <StyledNavLink to="/register">Sign Up</StyledNavLink>
       </li>
     </Container>
   );

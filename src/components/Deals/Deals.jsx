@@ -24,7 +24,7 @@ const Deals = () => {
     <StyledSection id="Deals">
       <HeadContainer>
         <h2>Open Deals</h2>
-        <ul>
+        <ul className="deals_list">
           {deals.map(item => (
             <DealsItem key={item.id} data={item} />
           ))}

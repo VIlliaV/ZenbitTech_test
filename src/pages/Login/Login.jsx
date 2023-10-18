@@ -1,5 +1,7 @@
+import AuthenticationPage from '../../components/AuthenticationPage/AuthenticationPage';
+
 const Login = () => {
-  return <div></div>;
+  return <AuthenticationPage />;
 };
 
 export default Login;
