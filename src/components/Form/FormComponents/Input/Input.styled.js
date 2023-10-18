@@ -8,7 +8,6 @@ export const InputStyled = styled.input`
   border-radius: 5px;
   border: 2px solid #e0e0e0;
   border-color: #e0e0e0;
-  text-transform: capitalize;
 
   &:focus {
     outline: none;

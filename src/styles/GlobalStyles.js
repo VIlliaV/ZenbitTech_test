@@ -37,6 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.57143; 
     color: var(--secondary);
        &::placeholder {
+          text-transform: capitalize;
        opacity: 0.5;
        }
   }
