@@ -50,5 +50,11 @@ export const GlobalStyles = createGlobalStyle`
   text-transform: capitalize;
   }
 
+  a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57143; 
+    color: var(--accent);
+  }
  
 `;

@@ -5,4 +5,9 @@ export const FormStyled = styled.form`
   flex-direction: column;
   align-items: start;
   gap: 20px;
+  & .forgot_password {
+    display: block;
+    margin-top: 10px;
+    float: right;
+  }
 `;
