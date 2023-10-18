@@ -1,10 +1,15 @@
 import styled from 'styled-components';
-import hero_backgr from '../../assets/images/home_backgr@2x.webp';
+import hero_backgr from '../../assets/images/home_backgr.webp';
+import hero_backgr2x from '../../assets/images/home_backgr@2x.webp';
+import { media } from '../../styles/media';
 
 export const HeroSectionStyled = styled.section`
   width: 100%;
   height: 100vh;
   background: top / cover no-repeat url(${hero_backgr});
+  @media ${media.retina} {
+    background-image: url(${hero_backgr2x});
+  }
   & .container {
     align-items: center;
     justify-content: center;

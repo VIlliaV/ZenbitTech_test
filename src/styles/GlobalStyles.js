@@ -41,5 +41,13 @@ export const GlobalStyles = createGlobalStyle`
        }
   }
 
+  label {
+  color: #000;
+  font-family: var(--font-title);
+  font-size: 14px;
+  line-height: 1.42857; 
+  text-transform: capitalize;
+  }
+
  
 `;
