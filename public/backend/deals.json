@@ -15,7 +15,7 @@
     "img": "/images/home_backgr@2x.webp",
     "dhs": 6500000,
     "ticket": 60000,
-    "yield": 9.25,
+    "yield_deal": 9.25,
     "days": 150,
     "sold": 75
   },

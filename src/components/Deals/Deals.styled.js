@@ -12,12 +12,5 @@ export const StyledSection = styled.section`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    & li {
-      width: calc(100% / 2 - 10px);
-      & img {
-        width: 100%;
-        height: 400px;
-      }
-    }
   }
 `;

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import HeadContainer from '../HeadContainer/HeadContainer';
 import { StyledSection } from './Deals.styled';
 import { fetchData } from '../../api/fetchDeals';
+import DealsItem from './DealsItem/DealsItem';
 
 const Deals = () => {
   const [deals, setDeals] = useState([]);
@@ -24,10 +25,8 @@ const Deals = () => {
       <HeadContainer>
         <h2>Open Deals</h2>
         <ul>
-          {deals.map(deal => (
-            <li key={deal.id}>
-              <img src={deal.img} alt={deal.name} />
-            </li>
+          {deals.map(item => (
+            <DealsItem key={item.id} data={item} />
           ))}
         </ul>
       </HeadContainer>
