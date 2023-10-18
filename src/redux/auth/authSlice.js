@@ -8,7 +8,7 @@ const authInitialState = {
   token: null,
   isLoggedIn: false,
   isRefreshing: false,
-  loginError: false,
+  loginError: '',
 };
 
 const authSlice = createSlice({
@@ -17,26 +17,26 @@ const authSlice = createSlice({
   extraReducers: builder => {
     builder
       .addCase(login.pending, state => {
-        state.loginError = false;
+        state.loginError = '';
       })
       .addCase(login.fulfilled, (state, { payload }) => {
         state.user = payload.user;
         state.token = payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(login.rejected, state => {
-        state.loginError = true;
+      .addCase(login.rejected, (state, { payload }) => {
+        state.loginError = payload.message;
       })
       .addCase(signUp.pending, state => {
-        state.loginError = false;
+        state.loginError = '';
       })
       .addCase(signUp.fulfilled, (state, { payload }) => {
         state.user = payload.user;
         state.token = payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(signUp.rejected, state => {
-        state.loginError = true;
+      .addCase(signUp.rejected, (state, { payload }) => {
+        state.loginError = payload.message;
       })
       .addCase(logOut.fulfilled, state => {
         state.user.name = null;
@@ -46,7 +46,7 @@ const authSlice = createSlice({
       })
       .addCase(refreshUser.pending, state => {
         state.isRefreshing = true;
-        state.loginError = false;
+        state.loginError = '';
       })
       .addCase(refreshUser.fulfilled, (state, { payload }) => {
         state.user = payload;

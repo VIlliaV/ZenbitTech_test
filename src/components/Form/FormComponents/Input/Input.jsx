@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { InputStyled } from './Input.styled';
 
 const Input = ({
@@ -7,13 +7,21 @@ const Input = ({
   placeholderInput = typeInput,
   requiredInput = false,
   title = false,
+  setUserData,
+  userInfo = {},
 }) => {
-  console.log('🚀 ~ title:', title);
   const [inputValue, setInputValue] = useState('');
   const handleChange = event => {
     const value = event.target.value;
     setInputValue(value);
+    setUserData(typeInput, value);
   };
+
+  useEffect(() => {
+    if (Object.keys(userInfo).length === 0) {
+      setInputValue('');
+    }
+  }, [userInfo]);
 
   return (
     <>

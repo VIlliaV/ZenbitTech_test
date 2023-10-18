@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const { REACT_APP_BACKEND_URL } = import.meta.env;
+const { VITE_BACKEND_URL } = import.meta.env;
 
-axios.defaults.baseURL = REACT_APP_BACKEND_URL;
+axios.defaults.baseURL = VITE_BACKEND_URL;
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -20,7 +20,7 @@ export const login = createAsyncThunk('user/login', async (user, { rejectWithVal
     setAuthHeader(data.token);
     return data;
   } catch (error) {
-    return rejectWithValue(error.message);
+    return rejectWithValue(error.response.data);
   }
 });
 
