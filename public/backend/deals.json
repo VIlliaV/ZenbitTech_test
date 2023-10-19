@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "The Marina Torch",
-    "img": "/images/home_backgr@2x.webp",
+    "img": "https://res.cloudinary.com/dlghqseuk/image/upload/v1697705162/w1sofcnlppwqwhx9ebyo.webp",
     "dhs": 6500000,
     "ticket": 60000,
     "yield_deal": 9.25,
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "name": "The Marina Torch",
-    "img": "/images/home_backgr@2x.webp",
+    "name": "HHHR Tower",
+    "img": "https://res.cloudinary.com/dlghqseuk/image/upload/v1697705162/rnjt8j6cqxia7pgzgca2.webp",
     "dhs": 6500000,
     "ticket": 60000,
     "yield_deal": 9.25,
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "name": "The Marina Torch",
-    "img": "/images/home_backgr@2x.webp",
+    "name": "Ocean peaks",
+    "img": "https://res.cloudinary.com/dlghqseuk/image/upload/v1697705162/hvnukhk86azqwpetnaed.webp",
     "dhs": 6500000,
     "ticket": 60000,
     "yield_deal": 9.25,
@@ -31,8 +31,8 @@
   },
   {
     "id": 4,
-    "name": "The Marina Torch",
-    "img": "/images/home_backgr@2x.webp",
+    "name": "Al Yaqoub Tower",
+    "img": "https://res.cloudinary.com/dlghqseuk/image/upload/v1697705163/aslfn2cklls6jebpyobm.webp",
     "dhs": 6500000,
     "ticket": 60000,
     "yield_deal": 9.25,
