@@ -2,7 +2,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const { VITE_BACKEND_URL } = import.meta.env;
-console.log('🚀 ~ VITE_BACKEND_URL:', VITE_BACKEND_URL);
 
 axios.defaults.baseURL = VITE_BACKEND_URL;
 
