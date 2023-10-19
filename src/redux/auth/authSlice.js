@@ -24,7 +24,7 @@ const authSlice = createSlice({
         state.token = payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(login.rejected, (state, { payload }) => {
+      .addCase(login.rejected, (state, { payload = { message: 'server no connect' } }) => {
         state.loginError = payload.message;
       })
       .addCase(signUp.pending, state => {
@@ -35,7 +35,7 @@ const authSlice = createSlice({
         state.token = payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(signUp.rejected, (state, { payload }) => {
+      .addCase(signUp.rejected, (state, { payload = { message: 'server no connect' } }) => {
         state.loginError = payload.message;
       })
       .addCase(logOut.fulfilled, state => {
