@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { AuthBackground, AuthPanel, StyledSection } from './AuthenticationPage.styled';
 import Form from '../Form/Form';
 import Label from '../Form/FormComponents/Label/Label';
@@ -15,14 +15,14 @@ import { useAuth } from '../../utils/Hooks/useAuth';
 const AuthenticationPage = () => {
   const { pathname } = useLocation();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+
   const [userData, setUserData] = useState({});
-  const { isLogin, loginError } = useAuth();
+  const { loginError } = useAuth();
   const title = pathname === '/login' ? 'Login' : 'Sign Up';
   const buttonName = pathname === '/login' ? 'Sign In' : 'Sign Up';
   const { email, password } = TYPE_INPUT;
 
-  isLogin && navigate('/');
+  // isLogin && navigate('/');
 
   useEffect(() => {
     loginError && toast.error(loginError);
